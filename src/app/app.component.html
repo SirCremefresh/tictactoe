@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>TicTacToe</h1>
+  <h2>..............das coolste Spiel..................</h2>
+
+  <div *ngIf="isGameMode == false">
+    <p>Name von Spieler 1:</p>
+    <input [(ngModel)]="name1">
+    <br>
+    <p>Name von Spieler 2:</p>
+    <input [(ngModel)]="name2">
+    <br>
+    <button (click)="isGameMode=true">Bereit zum Spielen!</button>
+  </div>
+
+
+  <div *ngIf="isGameMode">
+    <p class="p1">Spieler 1: {{name1}}</p>
+    <p class="p2">Spieler 2: {{name2}}</p>
+  </div>
+
+
+
+
+</div>
+
